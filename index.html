@@ -8,19 +8,37 @@
 </head>
 <body>
 
+    <h1>Lars Tønder</h1>
+
     <ul id="navbar">
-        <li>
-            <a href="">Home</a>
+        <li onclick="scroller(section1)">
+            Home
         </li>
-        <li>
-            <a href="">Projects</a>
+        <li onclick="scroller(section2)">
+            Projects
         </li>
-        <li>
-            <a href="">About</a>
+        <li onclick="scroller(section3)">
+            About
         </li>
     </ul>
 
-    <h1></h1>
+    <div id ="section1">
+        <h2>Section 1</h2>
+    </div>
 
+    <div id ="section2">
+        <h2>Section 2</h2>
+    </div>
+
+    <div id ="section3">
+        <h2>Section 3</h2>
+    </div>
+
+    <script>
+        function scroller(element){
+            var elmnt = element;
+            elmnt.scrollIntoView({behavior: "smooth"});
+        }
+    </script>
 </body>
 </html>
