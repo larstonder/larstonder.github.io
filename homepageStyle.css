@@ -1,5 +1,8 @@
 body {
     background-image: url(images/homepage.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #navbar li {
     list-style-type: none;
