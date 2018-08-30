@@ -1,0 +1,6 @@
+body {
+    background-image: url(images/homepage.png);
+}
+#navbar li {
+    list-style-type: none;
+}
