@@ -16,11 +16,12 @@ body {
 }
 #navbar {
     width: 100%;
-    background-color: rgb(198, 215, 223);
+    background-color: #c6d7df;
     margin:0;
     padding:0;
     position: sticky;
     top: 0;
+    border-radius: 0 0 15px 15px;
 }
 #navbar li {
     padding: 1.5%;
@@ -31,9 +32,10 @@ body {
     display: inline-block;
 }
 #navbar li:hover{
-    background-color: black;
+    background-color: rgb(54, 54, 56);
     color: white;
     cursor: pointer;
+    border-radius: 0 0 15px 15px;
 }
 #home {
     top:0;
@@ -45,6 +47,8 @@ body {
     height:100%;
     background-image: url("images/homepage.jpeg");
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -1;
     filter: blur(5px);
     position: fixed;
@@ -52,7 +56,7 @@ body {
 .secWrap {
     display: flex;
     align-items: center;
-    height: 100vh;
+    margin: 2% 0;
 }
 .cont {
     display: block;
@@ -61,11 +65,31 @@ body {
     margin: auto;
     border-radius: 15px;
     background-color: rgba(240, 248, 255, 0.534);
-    padding: 1%;
+    padding: 1% 5% 4% 5%;
 }
 .underHeader {
     text-align: center;
     font-weight: 500;
     font-size: 1.5em;
     padding: 2%;
+}
+#proj {
+    margin: auto;
+    padding: 0;
+    width: 50%;
+}
+#proj li {
+    background-color: white;
+    list-style-type: none;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5px;
+}
+#proj li:hover {
+    background-color: rgb(175, 180, 180);
+}
+footer {
+    height: 25vh;
+    background-color: #c6d7df;
+    border-radius: 15px 15px 0 0;
 }
