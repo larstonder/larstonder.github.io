@@ -5,13 +5,16 @@
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="homepageStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
 
-    <h1>Lars Tønder</h1>
+    <span id="home"></span>
+
+    <div id="bg"></div>
 
     <ul id="navbar">
-        <li onclick="scroller(section1)">
+        <li onclick="scroller(home)">
             Home
         </li>
         <li onclick="scroller(section2)">
@@ -22,16 +25,18 @@
         </li>
     </ul>
 
-    <div id ="section1">
-        <h2>Section 1</h2>
+    <h1 class="header">lars tønder</h1>
+
+    <div id ="section2" class="secWrap">
+        <div class="cont">
+            <h2 class="underHeader">Projects</h2>
+        </div>
     </div>
 
-    <div id ="section2">
-        <h2>Section 2</h2>
-    </div>
-
-    <div id ="section3">
-        <h2>Section 3</h2>
+    <div id ="section3" class="secWrap">
+        <div class="cont">
+            <h2 class="underHeader">About</h2>
+        </div>
     </div>
 
     <script>
