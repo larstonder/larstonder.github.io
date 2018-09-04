@@ -5,34 +5,44 @@
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="homepageStyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
 
     <span id="home"></span>
 
-    <div id="bg"></div>
+    <div id="header">
 
-    <ul id="navbar">
-        <li onclick="scroller(home)">
-            Home
-        </li>
-        <li onclick="scroller(section2)">
-            Projects
-        </li>
-        <li onclick="scroller(section3)">
-            About
-        </li>
-    </ul>
+        <h1 id="logo">Lars Tønder</h1>
 
-    <h1 class="header">lars tønder</h1>
+        <ul id="navbar">
+            <li onclick="scroller(home)">
+                Home
+            </li>
+            <li onclick="scroller(section2)">
+                Projects
+            </li>
+            <li onclick="scroller(section3)">
+                About
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="divider">
+        <div style="align-self: center; margin: auto;">
+            <p class="quote" style="margin-left:200px;">&quot;Det e jo med damer som datamaskina som'n Lars pleie å si: dæm koste spennj og kommer med innebygd mus!&quot;</p>
+            <p class="quoteBy">- Kompisen til Lars</p>
+        </div>
+        <img src="images/mannen.png" alt="mannen" style="height:100%; z-index: -1; margin-right: 200px">
+    </div>
 
     <div id ="section2" class="secWrap">
         <div class="cont">
             <h2 class="underHeader">Projects</h2>
                 <ul id="proj">
                     <li>
-                        <a href="">Prosjekt 1</a>
+                        <a href="calc.html">Kalkisen min brusjan</a>
                     </li>
                     <li>
                         <a href="">Prosjekt 2</a>
@@ -44,6 +54,14 @@
         </div>
     </div>
 
+    <div class="divider">
+        <img src="images/mannenen.png" alt="mannen" style="height:100%; z-index: -1; margin-left: 200px">
+        <div style="align-self: center; margin:auto;">
+            <p class="quote">&quot;Æ hate damer fra Iran!&quot;</p>
+            <p class="quoteBy">- Kompisen til Lars</p>
+        </div>
+    </div>
+
     <div id ="section3" class="secWrap">
         <div class="cont">
             <h2 class="underHeader">About</h2>
@@ -51,7 +69,6 @@
         </div>
     </div>
 
-    <footer></footer>
 
     <script>
         function scroller(element){

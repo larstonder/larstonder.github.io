@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+</head>
+<body>
+
+    <input type="text" value="" id="tall1">
+    <select id="math">
+        <option value="">--Select calculative method--</option>
+        <option value="add">Plus</option>
+        <option value="subtract">Minus</option>
+        <option value="multiply">Times</option>
+        <option value="divide">Divided by</option>
+    </select>
+    <input type="text" value="" id="tall2">
+    <input type="submit" value="=" onclick="calculate()">
+    <p id="equals"></p>
+
+    <script>
+
+        function calculate(){
+
+            var tall1 = Number(document.getElementById("tall1").value);
+            var tall2 = Number(document.getElementById("tall2").value);
+
+            var selectedValue = document.getElementById("math").value;
+
+            switch(selectedValue){
+                case "":
+                    var result = "Please select calculative method!";
+                break;
+                case "add":
+                    var result = tall1 + tall2;
+                break;
+                case "subtract":
+                    var result = tall1 - tall2;
+                break;
+                case "multiply":
+                    var result = tall1 * tall2;
+                break;
+                case "divide":
+                    var result = tall1 / tall2;
+                break;
+            }
+            
+            document.getElementById("equals").innerHTML = "svaret er " + result;
+        }
+    </script>
+    
+</body>
+</html>

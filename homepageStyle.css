@@ -2,74 +2,60 @@
     margin: 0;
 }
 body {
+    background-color: #da5f5f;
     padding:0;
     margin:0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: black;
+    font-family: 'Roboto', sans-serif;
 }
-.header {
-    font-size: 100px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 5%;
-    color: white;
+#header {
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #navbar {
-    width: 100%;
-    background-color: #c6d7df;
-    margin:0;
-    padding:0;
-    position: sticky;
-    top: 0;
-    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 50%;
 }
 #navbar li {
-    padding: 1.5%;
-    margin:0;
+    margin: 1.5% 10%;
+    padding: 0;
     text-align: center;
-    min-width: 150px;
     list-style-type: none;
     display: inline-block;
+    transition: color 0.2s;
 }
 #navbar li:hover{
-    background-color: rgb(54, 54, 56);
-    color: white;
+    color: #da5f5f;
     cursor: pointer;
-    border-radius: 0 0 15px 15px;
+}
+#logo {
+    color: #000000;
+    margin: 5%;
 }
 #home {
     top:0;
     left:0;
     position: absolute;
 }
-#bg {
-    width: 100%;
-    height:100%;
-    background-image: url("images/homepage.jpeg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    filter: blur(5px);
-    position: fixed;
-}
 .secWrap {
     display: flex;
     align-items: center;
-    margin: 2% 0;
 }
 .cont {
     display: block;
-    width: 75%;
+    width: 100%;
     height: 75%;
-    margin: auto;
-    border-radius: 15px;
+    border-radius: 3px;
     background-color: rgba(240, 248, 255, 0.534);
     padding: 1% 5% 4% 5%;
 }
 .underHeader {
     text-align: center;
-    font-weight: 500;
     font-size: 1.5em;
     padding: 2%;
 }
@@ -88,8 +74,19 @@ body {
 #proj li:hover {
     background-color: rgb(175, 180, 180);
 }
-footer {
-    height: 25vh;
-    background-color: #c6d7df;
-    border-radius: 15px 15px 0 0;
+.divider {
+    height: 60vh;
+    display: flex;
+}
+.quote {
+    color: white;
+    font-size: 1.5em;
+    font-style: italic;
+}
+.quoteBy {
+    color: white;
+    font-size: 1.6em;
+    font-style: italic;
+    margin: auto;
+    float:right;
 }
